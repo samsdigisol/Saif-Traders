@@ -1,0 +1,130 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+body{
+    background-color: teal;
+}
+.navButton{
+    background-color: teal;
+    width: auto;
+    padding: 1%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.head a{
+    color: aliceblue;
+    text-shadow: 2px black;
+    cursor: pointer;
+    text-decoration: none;
+    margin: auto;
+    padding: 2%;
+}
+a:hover{
+    zoom: 120%;
+    color:violet;
+}
+.head{
+    display: grid;
+    grid-template-rows: 60% 40%;
+}
+.toggle{
+    display: none;
+}
+nav{
+    text-align: right;
+    margin-top: auto;
+}
+#logo{
+    width: 20%;
+    height: 20%;
+}
+#home{
+    background-color: transparent;
+    color:greenyellow;
+    margin: 2px;
+    border-color: transparent;
+    font-weight: bold;
+    font-size: medium;
+}
+#product, #about, #privacy{
+    background-color: transparent;
+    border-color: transparent;
+    margin: 2px;
+    font-weight: bold;
+    color:goldenrod;
+    font-size: medium;
+}
+#home:hover,#product:hover,#about:hover{
+    zoom : 120%;
+}
+footer{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 1%;
+    background-color: teal;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    color:snow;
+    font-weight: lighter;
+}
+object{
+    padding: 1%;
+    height :68vh;
+    width : 100%;
+}
+.links a{
+    color: azure;
+    text-decoration: none;
+    margin: 1%;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .navButton{
+        height: auto;
+    }
+    .toggle{
+        display: block;
+        width: 100%;
+        text-align: center;
+        height: 40%;
+        background-color: azure;
+        color: teal;
+        border-color: transparent;
+        margin: 1%;
+        margin-bottom: 0;
+        margin-top: auto;
+    }
+    nav{
+        display: none;
+        margin-top: 1px;
+    }
+    .headLink{
+        display: block;
+    }
+    object{
+        height: 74vh;
+    }
+    .profile{
+        height: auto;
+        display: grid;
+        text-align: center;
+    }
+    #logo{
+        height: 100%;
+        width: 100%;
+
+    }
+    #head{
+        display: grid;
+        grid-template-rows: 44% 56%;
+    }
+    header{
+        height: auto;
+    }
+}
